@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+	<xs:element name="MedRecords">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="LabRecord" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PtInfo">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Name">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:string" name="FirstName"/>
+														<xs:maxLength value="50"/>
+													<xs:element type="xs:string" name="MiddleName" minOccurs="0"/>
+														<xs:maxLength value="50"/>
+													<xs:element type="xs:string" name="LastName"/>
+														<xs:maxLength value="50"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="DOB">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element type="xs:byte" name="Day" range="1-31"/>
+													<xs:element type="xs:byte" name="Month" range="1-12"/>
+													<xs:element type="xs:short" name="Year" range="1900-2016"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="mrn" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element type="xs:string" name="MedTest">
+								<xs:complexType>
+									<xs:choice>
+										<xs:element name="Blood" type="xs:string"/>
+										<xs:element name="Stool" type="xs:string"/>
+										<xs:element name="Sputum" type="xs:string"/>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+							<xs:element type="xs:string" name="TestDate"/>
+							<xs:element type="xs:short" name="TestCost">
+								<xs:complexType>
+									<xs:restriction base = "xs:integer">
+										<xs:minInclusive value="1"/>
+										<xs:maxInclusive value="9,999"/>
+									</xs:restriction>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
