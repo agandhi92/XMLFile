@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lifeExpectancy>
+  <country name="Afghanistan">
+    <male>
+      <Y1990>42</Y1990>
+      <Y2000>44</Y2000>
+      <Y2009>47</Y2009>
+    </male>
+    <female>
+      <Y1990>46</Y1990>
+      <Y2000>48</Y2000>
+      <Y2009>50</Y2009>
+    </female>
+    <bothsex>
+      <Y1990>44</Y1990>
+      <Y2000>46</Y2000>
+      <Y2009>48</Y2009>
+    </bothsex>
+  </country>
+  <country name="Albania">
+    <male>
+      <Y1990>65</Y1990>
+      <Y2000>68</Y2000>
+      <Y2009>72</Y2009>
+    </male>
+    <female>
+      <Y1990>71</Y1990>
+      <Y2000>73</Y2000>
+      <Y2009>75</Y2009>
+    </female>
+    <bothsex>
+      <Y1990>68</Y1990>
+      <Y2000>70</Y2000>
+      <Y2009>73</Y2009>
+    </bothsex>
+  </country>
+  <country name="Algeria">
+    <male>
+      <Y1990>66</Y1990>
+      <Y2000>68</Y2000>
+      <Y2009>71</Y2009>
+    </male>
+    <female>
+      <Y1990>69</Y1990>
+      <Y2000>71</Y2000>
+      <Y2009>74</Y2009>
+    </female>
+    <bothsex>
+      <Y1990>67</Y1990>
+      <Y2000>69</Y2000>
+      <Y2009>72</Y2009>
+    </bothsex>
+  </country>
+  <country name="Andorra">
+    <male>
+      <Y1990>74</Y1990>
+      <Y2000>76</Y2000>
+      <Y2009>79</Y2009>
+    </male>
+    <female>
+      <Y1990>81</Y1990>
+      <Y2000>83</Y2000>
+      <Y2009>85</Y2009>
+    </female>
+    <bothsex>
+      <Y1990>77</Y1990>
+      <Y2000>80</Y2000>
+      <Y2009>82</Y2009>
+    </bothsex>
+  </country>
+  <country name="Angola">
+    <male>
+      <Y1990>38</Y1990>
+      <Y2000>44</Y2000>
+      <Y2009>51</Y2009>
+    </male>
+    <female>
+      <Y1990>45</Y1990>
+      <Y2000>48</Y2000>
+      <Y2009>53</Y2009>
+    </female>
+    <bothsex>
+      <Y1990>42</Y1990>
+      <Y2000>46</Y2000>
+      <Y2009>52</Y2009>
+    </bothsex>
+  </country>
+</lifeExpectancy>
